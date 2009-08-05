@@ -32,7 +32,8 @@ class Flickr::Photosets < Flickr::Base
         :id => photoset[:id], 
         :num_photos => photoset[:photos],
         :title => photoset.title.to_s,
-        :description => photoset.description.to_s
+        :description => photoset.description.to_s,
+        :primary => photoset[:primary]
        }
     end
   
